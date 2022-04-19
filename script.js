@@ -13,7 +13,6 @@ const books = [
 ];
 
 const bookList = document.querySelector('#bookList');
-
 function renderBookList(listBook) {
   bookList.innerHTML = listBook
     .map(
@@ -27,16 +26,16 @@ function renderBookList(listBook) {
 }
 
 function saveBook(listBook) {
-const title = document.querySelector('#bookTitle');
-const author = document.querySelector('#bookAuthor');
+  const title = document.querySelector('#bookTitle');
+  const author = document.querySelector('#bookAuthor');
   if (title && author) {
-  localStorage.setItem('listBook', JSON.stringify(listBook));
-   location.reload();
+    localStorage.setItem('listBook', JSON.stringify(listBook));
+    location.reload();
   }
 }
 
 function getBook() {
-const listFromLocalStorage = localStorage.getItem('listBook');
+  const listFromLocalStorage = localStorage.getItem('listBook');
   if (listFromLocalStorage) {
     return JSON.parse(listFromLocalStorage);
   }
@@ -46,7 +45,6 @@ const listFromLocalStorage = localStorage.getItem('listBook');
 renderBookList(getBook());
 
 const addBookForm = document.querySelector('#bookEntry');
-
 addBookForm.addEventListener('submit', function (event) {
   event.preventDefault();
   const title = event.target.querySelector('#bookTitle').value;
