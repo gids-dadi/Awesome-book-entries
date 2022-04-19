@@ -21,22 +21,22 @@ function renderBookList(listBook) {
 <h4 class="title">${book.title}</h4>
             <p>${book.author}</p>
             <button data-id=${book.id} class="remove">Remove</button>
-            <hr>`
+            <hr>;`
     )
     .join('');
 }
 
 function saveBook(listBook) {
- const title = document.querySelector('#bookTitle');
- const author = document.querySelector('#bookAuthor');
+const title = document.querySelector('#bookTitle');
+const author = document.querySelector('#bookAuthor');
   if (title && author) {
-    localStorage.setItem('listBook', JSON.stringify(listBook));
-    location.reload();
+  localStorage.setItem('listBook', JSON.stringify(listBook));
+   location.reload();
   }
 }
 
 function getBook() {
-  const listFromLocalStorage = localStorage.getItem('listBook');
+const listFromLocalStorage = localStorage.getItem('listBook');
   if (listFromLocalStorage) {
     return JSON.parse(listFromLocalStorage);
   }
