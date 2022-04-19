@@ -27,8 +27,8 @@ function renderBookList(listBook) {
 }
 
 function saveBook(listBook) {
-  title = document.querySelector('#bookTitle');
-  author = document.querySelector('#bookAuthor');
+ const title = document.querySelector('#bookTitle');
+ const author = document.querySelector('#bookAuthor');
   if (title && author) {
     localStorage.setItem('listBook', JSON.stringify(listBook));
     location.reload();
