@@ -14,15 +14,15 @@ const books = [
 
 const bookList = document.querySelector('#bookList');
 function renderBookList(listBook) {
-  bookList.innerHTML = listBook
-    .map(
-      (book) => `
+  bookList.innerHTML = listBook.map(
+    (book) => `
 <h4 class="title">${book.title}</h4>
             <p>${book.author}</p>
             <button data-id=${book.id} class="remove">Remove</button>
             <hr>;`
-    )
-    .join('');
+
+    // .join('');
+  );
 }
 
 function saveBook(listBook) {
