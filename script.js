@@ -20,8 +20,9 @@ function renderBookList(listBook) {
 <h4 class="title">${book.title}</h4>
             <p>${book.author}</p>
             <button data-id=${book.id} class="remove">Remove</button>
-            <hr>`,
-    ).join('');
+            <hr>`
+    )
+    .join('');
 }
 
 function saveBook(listBook) {
@@ -29,7 +30,7 @@ function saveBook(listBook) {
   const author = document.querySelector('#bookAuthor');
   if (title && author) {
     localStorage.setItem('listBook', JSON.stringify(listBook));
-    location.reload();
+    localStorage.reload();
   }
 }
 
@@ -41,7 +42,7 @@ function getBook() {
   return books;
 }
 
-renderBookList(getBook());
+// renderBookList(getBook());
 
 const addBookForm = document.querySelector('#bookEntry');
 addBookForm.addEventListener('submit', function (event) {
