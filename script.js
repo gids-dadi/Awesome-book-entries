@@ -20,7 +20,7 @@ function renderBookList(listBook) {
 <h4 class="title">${book.title}</h4>
             <p>${book.author}</p>
             <button data-id=${book.id} class="remove">Remove</button>
-            <hr>`
+            <hr>;`
     )
     .join('');
 }
@@ -41,8 +41,6 @@ function getBook() {
   }
   return books;
 }
-
-// renderBookList(getBook());
 
 const addBookForm = document.querySelector('#bookEntry');
 addBookForm.addEventListener('submit', function (event) {
