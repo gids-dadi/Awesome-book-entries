@@ -20,9 +20,8 @@ function renderBookList(listBook) {
 <h4 class="title">${book.title}</h4>
             <p>${book.author}</p>
             <button data-id=${book.id} class="remove">Remove</button>
-            <hr>;`
-    )
-    .join('');
+            <hr>`,
+    ).join('');
 }
 
 function saveBook(listBook) {
