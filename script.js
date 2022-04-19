@@ -18,13 +18,14 @@ function renderBookList(listBook) {
   bookList.innerHTML = listBook
     .map(
       (book) => `
-<p class="title">${book.title}</p>
+<h4 class="title">${book.title}</h4>
             <p>${book.author}</p>
             <button data-id=${book.id} class="remove">Remove</button>
             <hr>`
     )
     .join('');
 }
+
 function saveBook(listBook) {
   title = document.querySelector('#bookTitle');
   author = document.querySelector('#bookAuthor');
