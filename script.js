@@ -46,6 +46,7 @@ function getBook() {
 renderBookList(getBook());
 
 const addBookForm = document.querySelector('#bookEntry');
+
 addBookForm.addEventListener('submit', function (event) {
   event.preventDefault();
   const title = event.target.querySelector('#bookTitle').value;
