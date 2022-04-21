@@ -3,10 +3,10 @@ import AwesomeBooks from './AwesomeBooks.js';
 const awesomeBooks = new AwesomeBooks();
 awesomeBooks.load();
 if (awesomeBooks.getBooks().length < 1) {
-  awesomeBooks.addBook('The Hobbit', 'J.R.R. Tolkien');
-  awesomeBooks.addBook('The Lord of the Rings', 'J.R.R. Tolkien');
-  awesomeBooks.addBook('The Catcher in the Rye', 'J.D. Salinger');
-  awesomeBooks.addBook('The Grapes of Wrath', 'John Steinbeck');
+  awesomeBooks.forBook('The Hobbit', 'J.R.R. Tolkien');
+  awesomeBooks.forBook('The Lord of the Rings', 'J.R.R. Tolkien');
+  awesomeBooks.forBook('The Catcher in the Rye', 'J.D. Salinger');
+  awesomeBooks.forBook('The Grapes of Wrath', 'John Steinbeck');
 }
 
 const bookList = document.querySelector('#bookList');
