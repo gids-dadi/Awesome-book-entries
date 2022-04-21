@@ -1,3 +1,64 @@
 * {
   margin: 0;
+  padding: 0;
+}
+
+body {
+  text-align: center;
+}
+
+.books {
+  border: 2px solid rgba(51, 51, 51, 0.48);
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 2px;
+}
+
+.book {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px;
+}
+
+.book > button {
+  margin-right: 20px;
+}
+
+.dark {
+  background-color: rgba(51, 51, 51, 0.48);
+}
+
+button {
+  padding: 4px;
+  cursor: pointer;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+form input {
+  padding: 8px;
+  width: 100%;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+}
+
+hr {
+  border: 1px solid rgba(51, 51, 51, 0.48);
+  width: 100px;
+  margin: 40px auto;
+}
+
+form button {
+  align-self: flex-end;
+  padding: 10px;
+  margin-right: -9px;
 }
