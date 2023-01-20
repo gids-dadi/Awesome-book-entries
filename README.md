@@ -23,6 +23,12 @@ Double click on the file index.html
 
 ## Authors
 
+👤 Gideon Dadi 
+
+-Linkedin [@GideonDadi](https://www.linkedin.com/feed/) 
+- GitHub: [@gids_dadi](https://github.com/gids-dadi) 
+- Twitter: @Dadi_AG](https://twitter.com/Dadi_AG) 
+
 👤 GedeonTS
 
 - GitHub: [@GedeonTS](https://github.com/GedeonTS)
@@ -30,11 +36,7 @@ Double click on the file index.html
 - LinkedIn: [Ushindi Gedeon](https://linkedin.com/in/ushindi-gedeon-73032a228)
 
 
-👤 Gideon Dadi 
 
--Linkedin [@GideonDadi] (https://www.linkedin.com/feed/) 
-- GitHub: [@gids_dadi](https://github.com/gids-dadi) 
-- Twitter: [@Dadi_AG](https://twitter.com/Dadi_AG) 
 
 ## Show your support
 
